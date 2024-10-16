@@ -14,7 +14,7 @@ const cors= require('cors')
 
 
 app.use(cors({
-    origin:'https://app-chat2-client.vercel.app', // Replace with your frontend URL
+    origin:['https://app-chat2-client.vercel.app','http://localhost:5173'], // Replace with your frontend URL
     credentials: true // Allows credentials (cookies, etc.) to be sent
 }))
 app.use(cookieParser())
